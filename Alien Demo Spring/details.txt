@@ -1,0 +1,13 @@
+this project is just the demo of the app using spring framework, in this project we know the details about
+@SpringBootApplication--- this annotation is used for starting the spring framework project, just a starer
+@Component--- it is the annotation which is actually used to create the object in the spring container
+@Autowired -- this annotation is used for conneting the object relation created by spring container
+@Qualifier -- this annotation is used for calling the class by the user defined object name of that class,
+
+default name of object in the spring container is the same as class name but all letter in lower case...
+eg: for Laptop class , default object name by spring container is laptop
+we can change this name by @Component("lap1")--- doi this in the Laltop class, so now the name of object for 
+Laptop class in the spring container is lap1,
+now we can fetch it by its name----
+we can do this for fetching---------@Qualifier("lap1"), while calling the object from the spring container
+
